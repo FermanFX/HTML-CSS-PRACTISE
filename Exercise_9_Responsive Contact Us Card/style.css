@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80em;
+    height: 33em;
+    border: 1px solid black;
+    margin: 10%;
+}
+
+.left-of-card {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.left-of-card>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email,
+.phone {
+    margin-top: 10%;
+}
+
+.left-of-card i {
+    color: darkblue;
+}
+
+.left-of-card p {
+    font-size: small;
+    color: rgb(141, 140, 139)
+}
+
+.right-of-card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-right: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.right-of-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right-of-card h2 {
+    color: darkblue;
+}
+
+.right-of-card p {
+    font-weight: 550;
+    font-size: small;
+    color: rgb(141, 140, 139)
+}
+
+.right-of-card form>input {
+    height: 4em;
+}
+
+.right-of-card form>input,
+textarea {
+    border: none;
+    background-color: rgb(236, 238, 238);
+    border-radius: calc(8em/15);
+    margin-top: 5%;
+    padding: 10px;
+}
+
+.right-of-card textarea {
+    height: 8em;
+
+}
+
+.right-of-card button {
+    cursor: pointer;
+    margin-top: 5%;
+    width: 30%;
+    height: 3em;
+    color: aliceblue;
+    background-color: darkblue;
+    font-size: medium;
+    border: none;
+    box-shadow: turquoise 1px;
+    border-radius: calc(3em/10);
+    transition: 0.5s;
+}
+
+.right-of-card button:after {
+    content: '>>';
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+
+}
+
+.right-of-card button:hover {
+    padding-right: 24px;
+    padding-left: 8px;
+
+
+}
+
+.right-of-card button:hover:after {
+    opacity: 1;
+    right: 25px;
+
+
+}
