@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite GB S", cursive;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    width: 100%;
+    background-color:rgba(0,149,119,255);
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+   border-radius: 5px;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    width: 25em;
+    height: 27em;
+}
+h1{
+    margin-top: 1em;
+    margin-bottom: 20px;
+
+}
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.container p > a , .container .F-p{
+    color: rgb(22, 150, 88);
+}
+.container .F-p{
+    margin-right : 15em ;
+    font-size: smaller;
+    margin-bottom: 2em ;
+
+}
+button{
+    width: 80%;
+    background-color: rgb(12, 187, 152) ;
+    padding: 10px;
+    color:aliceblue;
+    margin-bottom: 2em;
+    font-size:large;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+}
+button:hover{
+    border: 1px solid rgb(77, 99, 91);
+    cursor: pointer;
+    background-color: rgb(7, 158, 128);
+    transition: all ease-in-out 2.5ms;
+    color: rgba(36, 36, 221, 0.753);
+}
+.container .F-p:hover{
+    cursor: pointer;
+    transition: all ease-in-out 2.5ms;
+    color:rgba(36, 36, 221, 0.753);
+
+}
+.container p > a:hover{
+    cursor: pointer;
+    transition: all ease-in-out 2.5ms;
+    color:rgba(36, 36, 221, 0.753);
+}
