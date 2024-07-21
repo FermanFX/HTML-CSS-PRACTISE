@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+    background-color: blueviolet;
+    height: 40em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+* {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+    width: 90%;
+}
+
+.card-container .card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    width: 20em;
+    border-radius: 5%;
+
+}
+
+.card-container .card img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid blueviolet;
+}
+
+.card-container .card h3 {
+    margin-top: 1em;
+}
+
+.card-container .card h3,
+.stars {
+    font-size: small;
+    font-weight: 400;
+    color: blueviolet;
+
+}
+
+.card-container .midcard {
+    margin: calc(90%/30);
+}
+
+p {
+    max-width: 90%;
+    font: status-bar;
+    font-size: 15px;
+    margin: 1em 0 1em 0;
+}
+
+#button {
+    max-width: 100%;
+}
+
+.subscribe,
+.readmore {
+    height: 3em;
+    width: 8em;
+    border: 1px solid blueviolet;
+    border-radius: 5%;
+
+}
+
+.readmore {
+    color: blueviolet;
+}
+.readmore:hover{
+    cursor: pointer;
+    transition: 2.3 all in ease-in-out;
+    background-color: rgb(116, 51, 177);
+    color: aliceblue;
+}
+.subscribe:hover{
+    cursor: pointer;
+    transition: 2.3 all in ease-in-out;
+    background-color: rgb(65, 40, 89);
+    color: aliceblue;
+}
+
+.subscribe {
+    color: aliceblue;
+    background-color: blueviolet;
+}
+
+.stars1 i {
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .stars1 i.active {
+    color: blueviolet;
+  }
+  .stars2 i {
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .stars2 i.active {
+    color: blueviolet;
+  }
+  .stars3 i {
+    color: #e6e6e6;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  .stars3 i.active {
+    color: blueviolet;
+  }
+@media only screen and (max-width: 800px) {
+
+    .subscribe,
+    .readmore {
+        width: 100%;
+        margin-top: 1em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card-container .card {
+        width: 100%;
+    }
+
+    .subscribe , .readmore {
+        height: 3em;
+        width: 8em;
+    }
+
+}
