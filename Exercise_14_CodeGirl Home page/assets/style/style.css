@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100%;
+    height: 60em;
+}
+
+.bg {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/wp4603710.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Center the image */
+    /* Do not repeat the image */
+    background-size: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    color: aliceblue;
+    font-size: 40px;
+}
+nav h1 p{
+    color: rgba(230, 43, 168, 0.852);
+}
+
+ul li {
+    margin: 1em;
+    font-size: larger;
+    font-weight: 900;
+    color: rgb(66, 56, 101);
+    list-style: none;
+
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+ul li a:hover{
+    cursor: pointer;
+    transition: 3.2 all ease-in-out;
+    color: rgb(204, 64, 125);
+}
+
+nav div {
+    margin: 1em;
+}
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav div button {
+    width: 10em;
+    height: 3em;
+    margin: 1em;
+    border-radius: calc(3em/2);
+    border: none;
+}
+
+nav div button:hover {
+    cursor: pointer;
+    background-color: rgba(58, 69, 170, 0.825);
+    transition: 5.2ms all ease-in-out;
+    color: aliceblue;
+    font-size: large;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 46em;
+    margin-top: 10%;
+    margin-left: 60%;
+}
+
+.middle h1 {
+    font-size: 4em;
+    color: aliceblue;
+
+}
+
+.middle h2 {
+    font-size: 4em;
+    color: aliceblue;
+    margin-top: 1%;
+}
+.middle p{
+    color: aliceblue;
+    font-size: larger;
+    margin-bottom: 1%;
+}
+.middle button{
+    width: 20%;
+    height: 3em;
+    font-weight: 600;
+    font-size: larger;
+    color: aliceblue;
+    background-color: rgb(24, 26, 91);
+    border-radius: 10%;
+    border: none;
+}
+.middle button:hover{
+    background-color: rgb(26, 79, 126);;
+}
