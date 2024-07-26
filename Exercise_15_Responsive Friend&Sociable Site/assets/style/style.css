@@ -17,7 +17,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
 }
 
 nav img {
@@ -85,7 +85,8 @@ nav .button button {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: aliceblue;
 }
-.dW-ap:hover{
+
+.dW-ap:hover {
     cursor: pointer;
     transition: 3.2 all ease-in-out;
     background: #c0159e;
@@ -96,7 +97,8 @@ nav .button button {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
-.container{
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -106,11 +108,13 @@ nav .button button {
     overflow: hidden;
 
 }
-.container img{
+
+.container img {
     overflow: hidden;
     height: 55em;
 }
-.mid{
+
+.mid {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -118,16 +122,19 @@ nav .button button {
     width: calc(45em);
     gap: 35px;
     margin-left: 3em;
-    
+
 }
-.mid h1{
+
+.mid h1 {
     font-size: 6em;
-    
+
 }
-.mid p{
+
+.mid p {
     color: rgba(61, 59, 59, 0.861);
 }
-.mid button{
+
+.mid button {
     height: 4em;
     width: 20em;
     border: none;
@@ -141,8 +148,53 @@ nav .button button {
     font-size: medium;
     font-weight: 600;
 }
-.mid button:hover{
+
+.mid button:hover {
     cursor: pointer;
     transition: 1.2ms all ease-in-out;
     background: blueviolet;
+}
+
+@media only screen and (max-width: 1436px) {
+    .container img {
+        height: 50em;
+    }
+
+    .mid {
+        margin-bottom: 5em;
+    }
+}
+
+@media only screen and (max-width: 1314px) {
+    .container img {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:886px) {
+    nav .button {
+        display: none;
+    }
+
+    .container {
+        margin-top: none;
+        height: 40em;
+    }
+
+    .mid {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    nav ul{
+        display: none;
+    }
+    .mid{
+        margin-left: auto;
+    }
+    .mid p{
+        line-height: 1.8em;
+    }
 }
