@@ -195,3 +195,73 @@ nav div :hover {
     transition: 3.2ms all ease-in-out;
     background-color: rgb(228, 228, 228);
 }
+
+@media only screen and (max-width: 995px) {
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+        height: 60em;
+    }
+
+    .card-container button {
+        margin: 0;
+    }
+
+    .card-container p {
+        height: 1em;
+    }
+
+    .container div h1,
+    .container div h2 {
+        font-size: 150%;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .red-zone h1 {
+        font-size: 2em;
+
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    nav img {
+        display: none;
+
+    }
+
+    nav div {
+        margin: 0;
+    }
+
+    nav div a {
+        width: 5em;
+        height: 2em;
+        font-size: medium;
+        margin: 0.2em;
+    }
+
+    .card-container button {
+        width: 15em;
+        height: 3em;
+        font-size: medium;
+    }
+
+    .red-zone h1 {
+        font-size: 1em;
+
+    }
+
+
+}
