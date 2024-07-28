@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    overflow: hidden;
+}
+
+nav img {
+    overflow: hidden;
+    height: 5em;
+    margin-left: 5em;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2em 0 5em;
+}
+
+nav div a {
+    width: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 4em;
+    border-right: 2px solid rgba(102, 102, 102, 0.189);
+    text-decoration: none;
+    border-left: 2px solid rgba(102, 102, 102, 0.173);
+    margin: 1em;
+}
+
+nav div :first-child {
+    background-color: rgb(250, 86, 86);
+    color: white;
+}
+
+nav div :hover {
+    cursor: pointer;
+    transition: 3.2 all ease-in-out;
+    background-color: rgba(161, 58, 229, 0.918);
+}
+
+.container {
+    margin: 0 1em 0 1em;
+    height: 30em;
+    background-image: url(./assets/images/istockphoto-517188688-612x612.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(175, 208, 237);
+
+}
+
+.container div h1,
+.container div h2 {
+    font-size: 240%;
+    font-weight: 500;
+}
+
+.red-zone {
+    margin: 0 1em 0 1em;
+    height: 12em;
+    background-color: rgb(250, 86, 86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, calc(100%/2) 100%, 0 75%);
+
+}
+
+.red-zone h1,
+.red-zone p,
+.red-zone button {
+    color: aliceblue;
+
+}
+
+.red-zone h1 {
+    font-size: 3em;
+
+}
+
+.red-zone p,
+.red-zone button {
+    margin-bottom: 1em;
+}
+
+.red-zone button {
+    height: 3em;
+    width: 15em;
+    border: 2px solid white;
+    background-color: rgb(250, 86, 86);
+}
+
+.red-zone button:hover {
+    cursor: pointer;
+    transition: 3.2 all ease-in-out;
+    background-color: rgb(204, 68, 68);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    height: 20em;
+    margin: 2em 1em 0 1em;
+
+}
+
+.card-container .card1,
+.card-container .card2,
+.card-container .card3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 20em;
+    width: 100%;
+
+
+}
+
+.card-container .card1,
+.card-container .card3 {
+    margin: 0 2em 0 2em;
+}
+
+.card-container i {
+    text-align: center;
+    font-weight: 800;
+    font-size: 100px;
+    color: rgb(250, 86, 86);
+
+}
+
+.card-container h3,
+.card-container button {
+
+    color: rgb(250, 86, 86);
+    margin-top: 1em;
+    text-align: center;
+
+
+}
+
+.card-container p {
+    width: calc(100%/1.2);
+    height: 10em;
+    margin-top: 1em;
+    color: rgba(108, 106, 106, 0.625);
+    font-style: oblique;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card-container button {
+    width: 18em;
+    height: 5em;
+    border: rgb(250, 86, 86);
+    border-radius: none;
+    font-weight: 800;
+    font-size: large;
+    background-color: white;
+}
+
+.card-container button:hover {
+    cursor: pointer;
+    transition: 3.2ms all ease-in-out;
+    background-color: rgb(228, 228, 228);
+}
