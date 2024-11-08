@@ -1,0 +1,116 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Ubuntu", serif;
+}
+
+body {
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 35em; */
+}
+
+form {
+    background-color: aliceblue;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: calc(30em/40);
+    width: 25em;
+    height: 30em;
+    margin-top: 3em;
+
+}
+
+form h2 {
+    margin-top: 1em;
+    font-size: xx-large;
+}
+
+form .f-t {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form .f-t button {
+    width: 9em;
+    height: 3em;
+    border: none;
+    font-size: large;
+    border-radius: calc(3em/10);
+    color: aliceblue;
+}
+
+.f-t .f {
+    background-color: blue;
+
+}
+
+.f-t .t {
+
+    background-color: rgb(118, 176, 238);
+}
+
+.inputs {
+    margin-top: 1em;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(73, 72, 72, 0.445);
+    border-radius: calc(3em/10);
+}
+
+.inputs i {
+    margin-left: 0.4em;
+    margin-right: 0.2em;
+}
+
+.inputs input {
+    width: 100%;
+    border: none;
+    height: 3em;
+}
+
+.part-of-remember {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+
+}
+
+.part-of-remember div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.part-of-remember div input {
+    width: 2em;
+
+}
+
+form .login {
+    margin-top: 1em;
+    width: 80%;
+    height: 3em;
+    font-size: larger;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-weight: 800;
+
+}
+
+form p {
+    margin-top: 1.2em;
+    font-size: large;
+}
