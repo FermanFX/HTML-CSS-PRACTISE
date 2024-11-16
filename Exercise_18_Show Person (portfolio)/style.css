@@ -1,89 +1,113 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-body{
-    background-color:whitesmoke;
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-header{
+
+header {
     height: 20em;
     width: 100%;
-    background-color: grey;
+    background-image: url(./image/premium_photo-1701590725747-ac131d4dcffd.jpg);
+
 }
-header nav{
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-nav h1{
+
+nav h1 {
     margin-left: 1em;
     color: orange;
 }
-nav ul{
+
+nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
-nav ul li{
+
+nav ul li {
     margin: 1em;
     list-style: none;
 }
-nav ul li >a{
+
+nav ul li>a {
     text-decoration: none;
     color: aliceblue;
 }
-header .center{
+
+header .center {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top:5em ;
+    margin-top: 5em;
 }
-.center>p , .center>h1{
-    margin-bottom:calc(1em/2) ;
+
+.center>p,
+.center>h1 {
+    margin-bottom: calc(1em/2);
     color: aliceblue;
 }
-.center button{
+
+.center button {
     width: 10em;
     height: 3em;
-    font-size:medium;
+    font-size: medium;
     background-color: orange;
     color: aliceblue;
     font-weight: 530;
     border: none;
 
 }
-section{
+
+section {
     width: 100%;
-    margin-top:2em ;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-section .container{
+
+section .lorem {
+    margin-top: 1em;
+}
+
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 90%;
     height: 15em;
 }
-section .container .card{
+
+section .container .card {
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
     margin: 1em;
     height: 15em;
-    background-color:rgba(255, 255, 255, 0.465);
-    border-radius:1rem ;
+    background-color: rgba(255, 255, 255, 0.465);
+    border-radius: 1rem;
 }
-section .container .card .bg-icones{
+
+section .container .card .bg-icones {
     width: 6em;
     margin: 1em;
     height: 6em;
@@ -92,57 +116,80 @@ section .container .card .bg-icones{
     justify-content: center;
     border-radius: calc(6em/2);
     background-color: orange;
-    color: aliceblue;    
+    color: aliceblue;
 }
-section .container .card .bg-icones i{
-    font-size:xx-large;
+
+section .container .card .bg-icones i {
+    font-size: xx-large;
 }
-section .container .card >p , section .container .card>h4{
+
+section .container .card>p,
+section .container .card>h4 {
     text-align: center;
-    margin-top:1em ;
+    margin-top: 1em;
+    
 }
-section .portfolio-container{
+section .container .card>p{
+    overflow: hidden;
+}
+
+
+.portfolio-section {
+    width: 80%;
+}
+
+section .portfolio-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+
+}
+
+section .portfolio-container .card {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-section .portfolio-container .card{
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
     background-color: white;
     margin: 1em;
     height: 18em;
 }
-.portfolio-container .card h4 , .portfolio-container .card p{
+
+.portfolio-container .card h4,
+.portfolio-container .card p {
     margin-top: calc(2em/2.4);
 
 }
-.O-A-T{
+
+.O-A-T {
     background-color: rgba(255, 255, 255, 0.558);
+    height: 34em;
 }
-.O-A-T h2{
+
+.O-A-T h2 {
     margin-top: 1em;
 }
-.O-A-T p{
+
+.O-A-T p {
     margin-top: 0.5em;
 }
-section .card-container{
+
+section .card-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-top: 2em;
     width: 100%;
-    
+
 
 }
-section .card-container .card{
+
+section .card-container .card {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.card-container .card img{
+
+.card-container .card img {
     width: 10em;
     height: 10em;
     border: 5px solid rgba(128, 128, 128, 0.56);
@@ -150,19 +197,23 @@ section .card-container .card{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
-.card-container .card h3{
+
+.card-container .card h3 {
     margin-top: 1em;
 }
-.card-container .card p{
-    margin-top:0.5em ;
+
+.card-container .card p {
+    margin-top: 0.5em;
 }
-.card-container .card .contact-us{
+
+.card-container .card .contact-us {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.card-container .card .contact-us >div{
+
+.card-container .card .contact-us>div>a {
     margin: 1em;
     width: 2em;
     height: 2em;
@@ -172,21 +223,26 @@ section .card-container .card{
     align-items: center;
     justify-content: center;
     color: white;
+    text-decoration: none;
 }
-.O-A-T-END-P{
+
+.O-A-T-END-P {
+    width: 100%;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
-footer{
+
+footer {
     width: 100%;
     height: 10em;
     display: flex;
     /* align-items: center; */
-    justify-content: center; 
+    justify-content: center;
     flex-direction: column;
 
 }
-footer .top{
+
+footer .top {
     width: 100%;
     display: flex;
     align-items: center;
@@ -194,25 +250,28 @@ footer .top{
     color: rgb(185, 180, 180);
 
 }
-footer .bottom{
+
+footer .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 2em;
 }
-footer .bottom p{
+
+footer .bottom p {
     margin-left: 1em;
 }
 
-.bottom .contact-us{
+.bottom .contact-us {
     width: 10em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 1em;
 }
-.bottom .contact-us >div{
+
+.bottom .contact-us>div {
     width: 2em;
     height: 2em;
     background-color: black;
@@ -221,9 +280,10 @@ footer .bottom p{
     justify-content: center;
     align-items: center;
     color: white;
-    
+
 }
-footer ul{
+
+footer ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
