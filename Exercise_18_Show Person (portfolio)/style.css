@@ -72,7 +72,12 @@ header .center {
     color: aliceblue;
     font-weight: 530;
     border: none;
+    border-radius: calc(3em/10);
 
+}
+.center button:hover{
+    cursor: pointer;
+    transition: all ease-in-out 105.2ms;
 }
 
 section {
@@ -195,6 +200,7 @@ section .card-container .card {
     border: 5px solid rgba(128, 128, 128, 0.56);
     border-radius: calc(10em/2);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 0.5em;
 
 }
 
@@ -230,6 +236,7 @@ section .card-container .card {
     width: 100%;
     text-align: center;
     margin-top: 2.5em;
+    
 }
 
 footer {
@@ -289,4 +296,9 @@ footer ul {
     justify-content: space-between;
     list-style: none;
     margin-right: 2em;
+}
+footer ul li p a{
+    text-decoration: none;
+    color: black;
+
 }
