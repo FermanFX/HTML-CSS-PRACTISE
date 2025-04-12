@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(236, 238, 240);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 4em;
+
+    span {
+        
+        font-size: x-large;
+    }
+    .signature{
+        font-family: "Playwrite MX Guides", cursive;
+        font-size: xx-large;
+        background: none;
+
+    }
+
+    button {
+        width: 3em;
+        height: 3em;
+        background: none;
+        border: none;
+
+        i {
+            font-size: x-large;
+        }
+
+    }
+    button:hover{
+        cursor: pointer;
+        transition: all ease-in-out 70.2ms;
+        color: rgba(36, 64, 64, 0.717);
+        border: 1px solid blueviolet;
+    }
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    width: calc(100%/1.66);
+    .picture{
+        margin-top: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid blueviolet; */
+        height: 25em;
+        width: 13em;
+        background-image: url(./pngimg.com\ -\ anime_girl_PNG30.png);
+        background-size: contain;
+        background-repeat:no-repeat ;
+        .a404{
+            margin-top: 10em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 15em;
+
+            span{
+
+                font-weight: 100;
+                font-size: 120px;
+            }
+            .first{
+                margin-right:0.6em ;
+            }
+            .second{
+                margin-right: 0.6em;
+                color: red;
+            }
+
+        }
+    }
+}
+aside{
+    background-image: url(./be2d902e0a89bd73357807b8c70f7e34.jpg);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    height: 40em;
+    display: flex;
+    align-items:center;
+    /* justify-content: center; */
+    flex-direction: column;
+    width: calc(100%/4 );
+    ul{
+        margin-left:5em ;
+        margin-top: 3em;
+        li{
+            margin-top:1em ;
+            list-style: none;
+            font-size: large;
+            a{
+                text-decoration: none;
+                color: rgb(86, 84, 84);
+            }
+            
+        }
+        li:hover{
+            cursor: pointer;
+            transition: all ease-in-out 80.2ms;
+            a{
+                color: rgb(163, 79, 79);
+            }
+        }
+    }
+}
